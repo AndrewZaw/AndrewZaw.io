@@ -7,17 +7,13 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Material Design Bootstrap</title>
-    <!-- Font Awesome -->
+    <title>Andrew Zaw</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     />
-    <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet" />
-    <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet" />
   </head>
 
@@ -25,23 +21,12 @@
     <header>
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light z-depth-0">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#basicExampleNav"
-            aria-controls="basicExampleNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
           <ul class="navbar-nav ml-auto ">
             <li class="nav-item">
               <a class="nav-link" href="#">Home </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Work</a>
+              <a class="nav-link" href="#work">Work</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
@@ -52,16 +37,24 @@
     </header>
     <main>
       <div class="container">
-        <div class="jumbotron  z-depth-0">
-          <h2 class="display-4">Hi, I'm Andrew Zaw.</h2>
-          <p class="lead">
+        <div class="jumbotron z-depth-0">
+          <h2 class="display-3">Hi, I'm Andrew Zaw.</h2>
+          <p class="lead mb-4">
             A web developer living in New York City, currently studying and
             working at New York University.
           </p>
-          <button type="button" class="btn btn-li">
+          <button
+            onclick="window.open('https://www.linkedin.com/in/azaw502/','_blank');"
+            type="button"
+            class="btn btn-li"
+          >
             <i class="fab fa-linkedin-in pr-1"></i> Linkedin
           </button>
-          <button type="button " class="btn btn-git ">
+          <button
+            onclick="window.open('https://github.com/azaw502','_blank');"
+            type="button "
+            class="btn btn-git "
+          >
             <i class="fab fa-github pr-1"></i> Github
           </button>
           <button
@@ -82,90 +75,390 @@
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
+        <div class="alert alert-success" role="alert" id="emailAlert">
+          Copied to clipboard!
+        </div>
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
-            <div class="modal-body" id="modal-email">
-              <h3 class="h3-responsive text-center">azaw502@gmail.com</h3>
+            <div
+              class="modal-body text-center md-form form-lg"
+              id="modal-email"
+            >
+              <input
+                type="text"
+                readonly="true"
+                value="azaw502@gmail.com"
+                id="email"
+              />
             </div>
             <div class="modal-footer justify-content-center">
               <button
                 type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
+                class="btn btn-primary"
+                onclick="copyToClipboardEmail()"
               >
-                Close
-              </button>
-              <button type="button" class="btn btn-primary">
                 Copy to Clipboard
+              </button>
+              <button type="button" class="btn btn-danger" data-dismiss="modal">
+                Close <i class="fas fa-times "></i>
               </button>
             </div>
           </div>
         </div>
       </div>
+      <div class="container" id="work">
+        <h1 class="display-4 section-heading mb-3">Work</h1>
+        <div class="card card-project">
+          <div class="row">
+            <div class="col-6 align-self-center">
+              <img
+                class="card-img card-img-project"
+                src="/img/thumbnails/Rouxlette.png"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="col-6">
+              <div class="card-body">
+                <div class="row mb-5">
+                  <div class="col">
+                    <h1 class="h1 card-title">Rouxlette</h1>
+                  </div>
+                  <div class="col text-right" id="icon-bar">
+                    <img
+                      class="icon"
+                      src="/img/icons/mongo_icon.png"
+                      alt="MongoDB"
+                      title="MongoDB"
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                    />
+                    <img
+                      class="icon"
+                      src="/img/icons/express_icon.png"
+                      alt="Express.js"
+                      title="Express.js"
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                    />
+                    <img
+                      class="icon"
+                      src="/img/icons/react_icon.png"
+                      alt="React.js"
+                      title="React.js"
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                    />
+                    <img
+                      class="icon"
+                      src="/img/icons/node_icon.png"
+                      alt="Node.js"
+                      title="Node.js"
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                    />
+                  </div>
+                </div>
+
+                <p class="card-text card-text-project">
+                  Web application that locates restaurants and eateries nearby
+                  and randomly selects from five based on user preference and
+                  location.
+                </p>
+                <div class="card-buttons">
+                  <button type="button" class="btn">
+                    Visual Demo
+                  </button>
+                  <button
+                    onclick="window.open('https://github.com/azaw502/food-finder','_blank');"
+                    type="button "
+                    class="btn btn-git "
+                  >
+                    <i class="fab fa-github pr-1"></i> Repository
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card-project">
+          <div class="row">
+            <div class="col-6 align-self-center text-center ">
+              <img
+                class="card-img card-img-project"
+                src="/img/thumbnails/CryptoWatch.png"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="col-6">
+              <div class="card-body">
+                <div class="row mb-5">
+                  <div class="col">
+                    <h1 class="h1 card-title">CryptoWatch</h1>
+                  </div>
+                  <div class="col text-right" id="icon-bar">
+                    <img
+                      class="icon"
+                      src="/img/icons/css_icon.png"
+                      alt="CSS 3"
+                      title="CSS 3"
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                    />
+                    <img
+                      class="icon"
+                      src="/img/icons/html_icon.png"
+                      alt="HTML 5"
+                      title="HTML 5"
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                    />
+                    <img
+                      class="icon"
+                      src="/img/icons/js_icon.jpg"
+                      alt="JavaScript"
+                      title="JavaScript"
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                    />
+                  </div>
+                </div>
+
+                <p class="card-text card-text-project">
+                  Web application deployed as a Google Chrome Extension,
+                  developed utilizing HTML/CSS and JavaScript. Pulls data from
+                  CoinMarketCap JSON API and provides up-to-date cryptocurrency
+                  tracking.
+                </p>
+                <div class="card-buttons">
+                  <button
+                    onclick="window.open('https://chrome.google.com/webstore/detail/cryptowatch/eekcmbpnjnnpalpgenmnbkbgiooiilco','_blank');"
+                    type="button"
+                    class="btn"
+                  >
+                    <i class="fab fa-chrome pr-1"></i> Chrome Store
+                  </button>
+
+                  <button
+                    onclick="window.open('https://github.com/azaw502/cryptowatch','_blank');"
+                    type="button "
+                    class="btn btn-git "
+                  >
+                    <i class="fab fa-github pr-1"></i> Repository
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card-project">
+          <div class="row">
+            <div class="col-6 align-self-center">
+              <img
+                class="card-img card-img-project"
+                src="/img/thumbnails/Papiers_Maches.png"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="col-6">
+              <div class="card-body">
+                <div class="row mb-5">
+                  <div class="col-8">
+                    <h1 class="h1 card-title">Papiers-Mâchés</h1>
+                  </div>
+                  <div class="col-4 text-right" id="icon-bar">
+                    <img
+                      class="icon"
+                      src="/img/icons/wp_icon.png"
+                      alt="WordPress"
+                      title="WordPress"
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                    />
+                    <img
+                      class="icon"
+                      src="/img/icons/css_icon.png"
+                      alt="CSS 3"
+                      title="CSS 3"
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                    />
+                    <img
+                      class="icon"
+                      src="/img/icons/html_icon.png"
+                      alt="HTML 5"
+                      title="HTML 5"
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                    />
+                  </div>
+                </div>
+
+                <p class="card-text card-text-project">
+                  French literature course developed for NYU created in
+                  WordPress and HTML/CSS.
+                </p>
+                <div class="card-buttons align-self-end">
+                  <button
+                    type="button"
+                    class="btn"
+                    onclick="window.open('http://interactivefrench.hosting.nyu.edu/','_blank');"
+                  >
+                    Live Site
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h1 class="section-heading mb-5">Work Positions</h1>
+        <div class="accordion" id="positions">
+          <div class="card card-accordion">
+            <div class="card-header card-header-accordion" id="headingOne">
+              <button
+                class="btn btn-accordion collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseOne"
+                aria-expanded="false"
+                aria-controls="collapseOne"
+              >
+                <div class="row">
+                  <h3 class="col text-left ">
+                    Educational Technology Assistant
+                  </h3>
+                  <div class="col text-right">
+                    <img
+                      class="position-icon nyu-icon"
+                      src="/img/icons/nyu_icon.png"
+                      alt="NYU"
+                    />
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div
+              id="collapseOne"
+              class="collapse"
+              aria-labelledby="headingOne"
+              data-parent="#positions"
+            >
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa
+                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably
+                haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="card card-accordion">
+            <div class="card-header card-header-accordion" id="headingTwo">
+              <button
+                class="btn btn-accordion collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                <div class="row">
+                  <h3 class="col text-left ">
+                    Research Assistant
+                  </h3>
+                  <div class="col text-right">
+                    <img class="position-icon" src="/img/icons/um_icon.png" />
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div
+              id="collapseTwo"
+              class="collapse"
+              aria-labelledby="headingTwo"
+              data-parent="#positions"
+            >
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa
+                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably
+                haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="card card-accordion">
+            <div class="card-header card-header-accordion" id="headingThree">
+              <button
+                class="btn btn-accordion collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                <div class="row">
+                  <h3 class="col text-left">
+                    Volunteer
+                  </h3>
+                  <div class="col text-right">
+                    <img
+                      class="position-icon"
+                      src="/img/icons/va_icon.png"
+                      alt="United States Department of Veterans Affairs"
+                    />
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div
+              id="collapseThree"
+              class="collapse"
+              aria-labelledby="headingThree"
+              data-parent="#positions"
+            >
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa
+                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably
+                haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h1 class="display-4 section-heading my-5">Personal</h1>
+      </div>
     </main>
 
-    <footer class="page-footer font-small stylish-color pt-4">
-      <!-- Footer Links -->
-      <div class="container-fluid text-center text-md-left">
-        <!-- Grid row -->
-        <div class="row">
-          <!-- Grid column -->
-          <div class="col-md-6 mt-md-0 mt-3">
-            <!-- Content -->
-            <h5 class="text-uppercase">Footer Content</h5>
-            <p>
-              Here you can use rows and columns to organize your footer content.
-            </p>
-          </div>
-          <!-- Grid column -->
-
-          <hr class="clearfix w-100 d-md-none pb-3" />
-
-          <!-- Grid column -->
-          <div class="col-md-3 mb-md-0 mb-3">
-            <!-- Links -->
-            <h5 class="text-uppercase">Links</h5>
-
-            <ul class="list-unstyled">
-              <li>
-                <a href="#!">Link 1</a>
-              </li>
-              <li>
-                <a href="#!">Link 2</a>
-              </li>
-              <li>
-                <a href="#!">Link 3</a>
-              </li>
-              <li>
-                <a href="#!">Link 4</a>
-              </li>
-            </ul>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-3 mb-md-0 mb-3">
-            <!-- Links -->
-            <h5 class="text-uppercase">Links</h5>
-
-            <ul class="list-unstyled">
-              <li>
-                <a href="#!">Link 1</a>
-              </li>
-              <li>
-                <a href="#!">Link 2</a>
-              </li>
-              <li>
-                <a href="#!">Link 3</a>
-              </li>
-              <li>
-                <a href="#!">Link 4</a>
-              </li>
-            </ul>
-          </div>
-          <!-- Grid column -->
-        </div>
-        <!-- Grid row -->
+    <footer class="page-footer font-small text-center white pt-4">
+      <button type="button" class="btn btn-li">
+        <i class="fab fa-linkedin-in "></i>
+      </button>
+      <button type="button" class="btn btn-git">
+        <i class="fab fa-github"></i>
+      </button>
+      <button type="button" class="btn btn-email">
+        <i class="fas fa-envelope"></i>
+      </button>
+      <div class="footer-copyright text-center white py-3">
+        <p class="text-dark">© 2019 - Andrew Zaw</p>
       </div>
     </footer>
 
@@ -178,5 +471,6 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
   </body>
 </html>
