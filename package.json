@@ -26,7 +26,8 @@
     "gulp-sass": "^3.2.1"
   },
   "dependencies": {
-    "@babel/core": "^7.3.3"
+    "@babel/core": "^7.3.3",
+    "gulp-gh-pages": "^0.5.4"
   },
   "keywords": [],
   "description": ""
