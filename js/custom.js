@@ -1,3 +1,6 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function copyToClipboardEmail() {
   var email = document.getElementById("email");
   email.select();
