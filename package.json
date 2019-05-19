@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.3.3",
+    "aos": "^2.3.4",
     "gulp-gh-pages": "^0.5.4"
   },
   "keywords": [],

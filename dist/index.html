@@ -14,13 +14,18 @@
     />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/mdb.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
   </head>
 
   <body>
     <header>
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light z-depth-0">
+        <nav
+          class="navbar navbar-expand-lg navbar-light z-depth-0"
+          data-aos="fade-right"
+          data-aos-delay="500"
+        >
           <ul class="navbar-nav ml-auto ">
             <li class="nav-item">
               <a class="nav-link" href="#">Home </a>
@@ -40,34 +45,42 @@
     </header>
     <main>
       <div class="container">
-        <div class="jumbotron z-depth-0">
+        <div class="jumbotron z-depth-0" data-aos="fade-right">
           <h2 class="display-3">Hi, I'm Andrew Zaw.</h2>
           <p class="lead mb-4">
             A web developer living in New York City, currently studying and
             working at New York University.
           </p>
-          <button
-            onclick="window.open('https://www.linkedin.com/in/azaw502/','_blank');"
-            type="button"
-            class="btn btn-li"
-          >
-            <i class="fab fa-linkedin-in fa-lg pr-1"></i> Linkedin
-          </button>
-          <button
-            onclick="window.open('https://github.com/AndrewZaw','_blank');"
-            type="button "
-            class="btn btn-git "
-          >
-            <i class="fab fa-github fa-lg pr-1"></i> Github
-          </button>
-          <button
-            type="button"
-            class="btn btn-email"
-            data-toggle="modal"
-            data-target="#emailModal"
-          >
-            <i class="fas fa-envelope fa-lg pr-1"></i> Email
-          </button>
+          <div class="button-bar">
+            <button
+              onclick="window.open('https://www.linkedin.com/in/azaw502/','_blank');"
+              type="button"
+              class="btn btn-li"
+              data-aos="fade"
+              data-aos-delay="500"
+            >
+              <i class="fab fa-linkedin-in fa-lg pr-1"></i> Linkedin
+            </button>
+            <button
+              onclick="window.open('https://github.com/AndrewZaw','_blank');"
+              type="button "
+              class="btn btn-git "
+              data-aos="fade"
+              data-aos-delay="650"
+            >
+              <i class="fab fa-github fa-lg pr-1"></i> Github
+            </button>
+            <button
+              type="button"
+              class="btn btn-email"
+              data-toggle="modal"
+              data-target="#emailModal"
+              data-aos="fade"
+              data-aos-delay="800"
+            >
+              <i class="fas fa-envelope fa-lg pr-1"></i> Email
+            </button>
+          </div>
         </div>
       </div>
       <div
@@ -109,9 +122,14 @@
           </div>
         </div>
       </div>
-      <div class="container" id="work">
+      <div
+        class="container"
+        id="work"
+        data-aos="fade-down"
+        data-aos-delay="500"
+      >
         <h1 class="display-4 section-heading mb-3">Work</h1>
-        <div class="card card-project">
+        <div class="card card-project" data-aos="fade-down">
           <div class="row">
             <div class="col-6 align-self-center">
               <img
@@ -162,7 +180,12 @@
                   </div>
                 </div>
                 <p class="card-text card-text-project">
-                  Rouxlette is a Web application that locates nearby restaurants based on the user location and randomly selects from five based on user preference. This is perfect for those in a hurry, unfamiliar with the local digs, or just plain indecisive! Simply choose your desired preferences and Rouxlette will generate nearby food destinations just for you. 
+                  Rouxlette is a Web application that locates nearby restaurants
+                  based on the user location and randomly selects from five
+                  based on user preference. This is perfect for those in a
+                  hurry, unfamiliar with the local digs, or just plain
+                  indecisive! Simply choose your desired preferences and
+                  Rouxlette will generate nearby food destinations just for you.
                 </p>
                 <div class="card-buttons">
                   <button type="button" class="btn">
@@ -180,7 +203,7 @@
             </div>
           </div>
         </div>
-        <div class="card card-project">
+        <div class="card card-project" data-aos="fade-down">
           <div class="row">
             <div class="col-6 align-self-center text-center ">
               <img
@@ -224,7 +247,9 @@
                 </div>
 
                 <p class="card-text card-text-project">
-                  CryptoWatch is a Google Chrome extension that provides up-to-date cryptocurrency tracking through the CoinMarketCap API. Checking on the crypto market has never been easier!
+                  CryptoWatch is a Google Chrome extension that provides
+                  up-to-date cryptocurrency tracking through the CoinMarketCap
+                  API. Checking on the crypto market has never been easier!
                 </p>
                 <div class="card-buttons">
                   <button
@@ -247,7 +272,7 @@
             </div>
           </div>
         </div>
-        <div class="card card-project" id="papiers">
+        <div class="card card-project" id="papiers" data-aos="fade-down">
           <div class="row">
             <div class="col-6 align-self-center">
               <img
@@ -291,7 +316,10 @@
                 </div>
 
                 <p class="card-text card-text-project">
-                  Papiers-Mâchés is a French literature course developed for NYU that provides interactive activities and a guided reading approach to help students learn and understand various famous French pieces. 
+                  Papiers-Mâchés is a French literature course developed for NYU
+                  that provides interactive activities and a guided reading
+                  approach to help students learn and understand various famous
+                  French pieces.
                 </p>
                 <div class="card-buttons align-self-end">
                   <button
@@ -299,16 +327,26 @@
                     class="btn"
                     onclick="window.open('http://interactivefrench.hosting.nyu.edu/','_blank');"
                   >
-                  <i class="fas fa-desktop pr-2"></i>Live Site
+                    <i class="fas fa-desktop pr-2"></i>Live Site
                   </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <h1 class="section-heading mb-5">Positions</h1>
+        <h1
+          class="section-heading mb-5"
+          data-aos="fade"
+          data-aos-anchor="#positions"
+        >
+          Positions
+        </h1>
         <div class="accordion" id="positions">
-          <div class="card card-accordion">
+          <div
+            class="card card-accordion"
+            data-aos="fade-down"
+            data-aos-anchor="#volunteer"
+          >
             <div class="card-header card-header-accordion" id="headingOne">
               <button
                 class="btn btn-accordion collapsed"
@@ -340,14 +378,31 @@
             >
               <div class="card-body">
                 <div class="row lead mb-3 mx-1">
-                  <div class="col text-left"><strong>2017 - Present</strong></div>
-                  <div class="col text-right"><strong>New York University</strong></div>
+                  <div class="col text-left">
+                    <strong>2017 - Present</strong>
+                  </div>
+                  <div class="col text-right">
+                    <strong>New York University</strong>
+                  </div>
                 </div>
-                In my years of working at New York University, I have been heavily involved with the design, development and implementation of many interactive NYU courses, mostly in HTML and CSS, including an Introductory Python course and <a href="#papiers">Papiers-Mâchés</a>, a WordPress French literature site. I developed and designed the standardized course template that the department uses, allowing for quicker and more efficient development of future courses.
+                In my years of working at New York University, I have been
+                heavily involved with the design, development and implementation
+                of many interactive NYU courses, mostly in HTML and CSS,
+                including an Introductory Python course and
+                <a href="#papiers">Papiers-Mâchés</a>, a WordPress French
+                literature site. I developed and designed the standardized
+                course template that the department uses, allowing for quicker
+                and more efficient development of future courses.
               </div>
             </div>
           </div>
-          <div class="card card-accordion">
+          <div
+            class="card card-accordion"
+            data-aos="fade-down"
+            data-aos-delay="200"
+            data-aos-anchor="#volunteer"
+            id="volunteer"
+          >
             <div class="card-header card-header-accordion" id="headingTwo">
               <button
                 class="btn btn-accordion collapsed"
@@ -374,15 +429,27 @@
               data-parent="#positions"
             >
               <div class="card-body">
-                  <div class="row lead mb-3 mx-1">
-                      <div class="col text-left"><strong>2016</strong></div>
-                      <div class="col text-right"><strong>University of Miami</strong></div>
-                    </div>
-                    At University of Miami, I assisted a team of graduate students and PhDs in the development of data analysis programs using R. I also helped set up a server to gather and organize data from the NIH (National Institute of Health) database. These were used in the research of the effects of DNA methylation on cancer cells, attempting to pave the way in the quest for a cure for cancer. 
+                <div class="row lead mb-3 mx-1">
+                  <div class="col text-left"><strong>2016</strong></div>
+                  <div class="col text-right">
+                    <strong>University of Miami</strong>
+                  </div>
+                </div>
+                At University of Miami, I assisted a team of graduate students
+                and PhDs in the development of data analysis programs using R. I
+                also helped set up a server to gather and organize data from the
+                NIH (National Institute of Health) database. These were used in
+                the research of the effects of DNA methylation on cancer cells,
+                attempting to pave the way in the quest for a cure for cancer.
               </div>
             </div>
           </div>
-          <div class="card card-accordion">
+          <div
+            class="card card-accordion"
+            data-aos="fade-down"
+            data-aos-delay="400"
+            data-aos-anchor="#volunteer"
+          >
             <div class="card-header card-header-accordion" id="headingThree">
               <button
                 class="btn btn-accordion collapsed"
@@ -413,88 +480,133 @@
               data-parent="#positions"
             >
               <div class="card-body">
-                  <div class="row lead mb-3 mx-1">
-                      <div class="col text-left"><strong>2012 - 2015</strong></div>
-                      <div class="col text-right"><strong>U.S. Department of Veterans Affairs (Miami, FL)</strong></div>
-                    </div>
-                    I worked with a variety of different departments here, from a sleep lab, to an virtual eLearning lab, and even food service. In my time at the eLearning lab, nicknamed LEMUR (Laboratory of E-Learning and Multimedia Research), I helped develop and design Adobe Captivate modules intended to help elderly and impaired veterans to understand and use computers and the Internet. 
+                <div class="row lead mb-3 mx-1">
+                  <div class="col text-left"><strong>2012 - 2015</strong></div>
+                  <div class="col text-right">
+                    <strong
+                      >U.S. Department of Veterans Affairs (Miami, FL)</strong
+                    >
+                  </div>
+                </div>
+                I worked with a variety of different departments here, from a
+                sleep lab, to an virtual eLearning lab, and even food service.
+                In my time at the eLearning lab, nicknamed LEMUR (Laboratory of
+                E-Learning and Multimedia Research), I helped develop and design
+                Adobe Captivate modules intended to help elderly and impaired
+                veterans to understand and use computers and the Internet.
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="container">
-        <h1 class="display-4 section-heading my-5" id="about">About</h1>
-        <div class="card">
-            <img class="img-profile" src="/img/thumbnails/profile.png"></i>
+        <h1
+          class="display-4 section-heading my-5"
+          id="about"
+          data-aos="fade"
+          data-aos-anchor="#about-card"
+        >
+          About
+        </h1>
+        <div class="card" data-aos="fade-down" id="about-card">
+          <img class="img-profile" src="/img/thumbnails/profile.png" />
           <div class="row">
             <div class="col-9">
               <div class="card-body mr-5 p-5">
-                I am a passionate Front End Developer, and have experience developing the front end for various applications, primarily in React.js, WordPress, Bootstrap 4 and HTML5/CSS3. I also have experience in Python, Java and MATLAB. I currently attend and work at New York University, studying Computer Science, with a planned graduation of Winter 2019. When not designing web applications, you can find me cooking up new dishes on my <a href="https://www.instagram.com/chef_zaw/">Instagram</a>, ranking up in League of Legends, or putting in work at the gym. 
+                I am a passionate Front End Developer, and have experience
+                developing the front end for various applications, primarily in
+                React.js, WordPress, Bootstrap 4 and HTML5/CSS3. I also have
+                experience in Python, Java and MATLAB. I currently attend and
+                work at New York University, studying Computer Science, with a
+                planned graduation of Winter 2019. When not designing web
+                applications, you can find me cooking up new dishes on my
+                <a href="https://www.instagram.com/chef_zaw/">Instagram</a>,
+                ranking up in League of Legends, or putting in work at the gym.
+                <button
+                  onclick="window.open('/Resume.pdf','_blank');"
+                  type="button"
+                  class="btn btn-resume my-3 mx-0"
+                  data-aos="fade"
+                  data-aos-delay="200"
+                >
+                  <i class="fas fa-file-pdf fa-lg pr-2"></i>Resume
+                </button>
               </div>
             </div>
-              <div class="col-3 profile-bg">
-              </div>
-            </div>
+            <div class="col-3 profile-bg"></div>
           </div>
         </div>
       </div>
     </main>
 
-    <footer class="page-footer font-small text-center pt-4" id="contact">
-      <h1 class="h1 text-dark">Contact</h1>
-      <button
-        onclick="window.open('/Resume.pdf','_blank');"
-        type="button"
-        class="btn btn-resume"
+    <footer>
+      <div
+        class="container page-footer font-small text-center pt-4"
+        id="contact"
       >
-      <i class="fas fa-file-pdf fa-lg pr-2"></i>Resume
-      </button>
-       
-      <button
-        onclick="window.open('https://www.linkedin.com/in/azaw502/','_blank');"
-        type="button"
-        class="btn-li btn-circle"
-      >
-        <i class="fab fa-linkedin-in "></i>
-      </button>
-      <button
-        onclick="window.open('https://github.com/AndrewZaw','_blank');"
-        type="button"
-        class="btn-git btn-circle"
-      >
-        <i class="fab fa-github"></i>
-      </button>
-      <button
-        onclick="window.open('https://www.instagram.com/chef_zaw/','_blank');"
-        type="button"
-        class="btn-ins btn-circle"
-      >
-      <i class="fab fa-instagram"></i>
-      </button>
-      <button
-        type="button"
-        class="btn-email btn-circle"
-        data-toggle="modal"
-        data-target="#emailModal"
-      >
-        <i class="fas fa-envelope"></i>
-      </button>
-      <div class="footer-copyright text-center white py-3">
-        <p class="text-dark">© 2019 - Andrew Zaw</p>
+        <h1 class="display-4 text-dark" data-aos="fade">
+          Contact
+        </h1>
+
+        <button
+          onclick="window.open('https://www.linkedin.com/in/azaw502/','_blank');"
+          type="button"
+          class="btn-li btn-circle"
+          data-aos="fade"
+          data-aos-delay="150"
+          data-aos-anchor=".page-footer"
+        >
+          <i class="fab fa-linkedin-in "></i>
+        </button>
+        <button
+          onclick="window.open('https://github.com/AndrewZaw','_blank');"
+          type="button"
+          class="btn-git btn-circle"
+          data-aos="fade"
+          data-aos-delay="300"
+          data-aos-anchor=".page-footer"
+        >
+          <i class="fab fa-github"></i>
+        </button>
+        <button
+          onclick="window.open('https://www.instagram.com/chef_zaw/','_blank');"
+          type="button"
+          class="btn-ins btn-circle"
+          data-aos="fade"
+          data-aos-delay="450"
+          data-aos-anchor=".page-footer"
+        >
+          <i class="fab fa-instagram"></i>
+        </button>
+        <button
+          type="button"
+          class="btn-email btn-circle"
+          data-toggle="modal"
+          data-target="#emailModal"
+          data-aos="fade"
+          data-aos-delay="600"
+          data-aos-anchor=".page-footer"
+        >
+          <i class="fas fa-envelope"></i>
+        </button>
+        <div class="footer-copyright text-center white py-3">
+          <p
+            class="text-dark"
+            data-aos="fade"
+            data-aos-delay="800"
+            data-aos-anchor=".page-footer"
+          >
+            © 2019 - Andrew Zaw
+          </p>
+        </div>
       </div>
-      
     </footer>
 
-    <!-- SCRIPTS -->
-    <!-- JQuery -->
     <script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
-    <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
   </body>
 </html>
