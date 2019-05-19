@@ -1,6 +1,3 @@
-import AOS from "aos";
-import "aos/dist/aos.css";
-
 function copyToClipboardEmail() {
   var email = document.getElementById("email");
   email.select();
@@ -28,11 +25,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       behavior: "smooth"
     });
   });
-});
-
-AOS.init({
-  once: true,
-  offset: 100,
-  easing: "ease-out",
-  duration: 400
 });
