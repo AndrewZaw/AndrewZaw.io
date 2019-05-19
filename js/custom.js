@@ -30,9 +30,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-AOS.init({
-  once: true,
-  offset: 100,
-  easing: "ease-out",
-  duration: 400
+$(function() {
+  AOS.init({
+    once: true,
+    offset: 100,
+    easing: "ease-out",
+    duration: 400
+  });
 });
