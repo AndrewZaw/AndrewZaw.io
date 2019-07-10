@@ -1,0 +1,4 @@
+> gulp mbd-go 
+build to browser
+> gulp deploy
+deploy to gh-pages
