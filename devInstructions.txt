@@ -2,3 +2,5 @@
 build to browser
 > gulp deploy
 deploy to gh-pages
+
+gift in gulp-gh-pages may need to be updated in node_modules

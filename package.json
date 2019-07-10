@@ -16,6 +16,7 @@
     "babel-eslint": "^8.1.2",
     "babel-preset-env": "^1.6.1",
     "browser-sync": "^2.26.7",
+    "gift": "^0.10.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.1.0",
     "gulp-concat": "^2.6.1",
