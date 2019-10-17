@@ -3,6 +3,8 @@
   "version": "4.8.0",
   "main": "index.js",
   "scripts": {
+    "dev": "gulp mdb-go",
+    "deploy": "gulp deploy",
     "js-compile-plugins": "babel --presets env js/src/ --out-dir js/dist/"
   },
   "repository": {

@@ -1,6 +1,11 @@
 > gulp mbd-go 
+or 
+> npm run dev
 build to browser
+
 > gulp deploy
+or
+> npm run deploy
 deploy to gh-pages
 
 gift in gulp-gh-pages may need to be updated in node_modules
