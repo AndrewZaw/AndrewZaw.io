@@ -129,7 +129,85 @@
         data-aos-delay="500"
       >
         <h1 class="display-4 section-heading mb-3">Work</h1>
-        <div class="card card-project" data-aos="fade-down">
+        <div class="card card-project" data-aos="fade">
+          <div class="row">
+            <div class="col-6 align-self-center">
+              <img
+                class="card-img card-img-project"
+                src="/img/thumbnails/Rouxlette.png"
+                alt="ReleaseM"
+              />
+            </div>
+            <div class="col-6">
+              <div class="card-body">
+                <div class="row mb-5">
+                  <div class="col">
+                    <h1 class="h1 card-title">ReleaseM</h1>
+                  </div>
+                  <div class="col text-right" id="icon-bar">
+                    <img
+                      class="icon"
+                      src="/img/icons/mongo_icon.png"
+                      alt="MongoDB"
+                      title="MongoDB"
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                    />
+                    <img
+                      class="icon"
+                      src="/img/icons/express_icon.png"
+                      alt="Express.js"
+                      title="Express.js"
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                    />
+                    <img
+                      class="icon"
+                      src="/img/icons/react_icon.png"
+                      alt="React.js"
+                      title="React.js"
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                    />
+                    <img
+                      class="icon"
+                      src="/img/icons/node_icon.png"
+                      alt="Node.js"
+                      title="Node.js"
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                    />
+                  </div>
+                </div>
+                <p class="card-text card-text-project">
+                  Rouxlette is a Web application that locates nearby restaurants
+                  based on the user location and randomly selects from five
+                  based on user preference. This is perfect for those in a
+                  hurry, unfamiliar with the local digs, or just plain
+                  indecisive! Simply choose your desired preferences and
+                  Rouxlette will generate nearby food destinations just for you.
+                </p>
+                <div class="card-buttons">
+                  <button
+                    onclick="window.open('https://releasem.herokuapp.com/','_blank');"
+                    type="button"
+                    class="btn"
+                  >
+                    Live App
+                  </button>
+                  <button
+                    onclick="window.open('https://github.com/AndrewZaw/ReleaseM','_blank');"
+                    type="button "
+                    class="btn btn-git "
+                  >
+                    <i class="fab fa-github fa-lg pr-1"></i> Repository
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card-project" data-aos="fade">
           <div class="row">
             <div class="col-6 align-self-center">
               <img
@@ -207,7 +285,7 @@
             </div>
           </div>
         </div>
-        <div class="card card-project" data-aos="fade-down">
+        <div class="card card-project" data-aos="fade">
           <div class="row">
             <div class="col-6 align-self-center text-center ">
               <img
@@ -276,7 +354,69 @@
             </div>
           </div>
         </div>
-        <div class="card card-project" id="papiers" data-aos="fade-down">
+        <div class="card card-project" id="vancery" data-aos="fade">
+          <div class="row">
+            <div class="col-6 align-self-center">
+              <img
+                class="card-img card-img-project"
+                src="/img/thumbnails/Papiers_Maches.png"
+                alt="Vancery"
+              />
+            </div>
+            <div class="col-6">
+              <div class="card-body">
+                <div class="row mb-5">
+                  <div class="col-8">
+                    <h1 class="h1 card-title">Vancery</h1>
+                  </div>
+                  <div class="col-4 text-right" id="icon-bar">
+                    <img
+                      class="icon"
+                      src="/img/icons/express_icon.png"
+                      alt="Express.js"
+                      title="Express.js"
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                    />
+                    <img
+                      class="icon"
+                      src="/img/icons/react_icon.png"
+                      alt="React.js"
+                      title="React.js"
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                    />
+                    <img
+                      class="icon"
+                      src="/img/icons/node_icon.png"
+                      alt="Node.js"
+                      title="Node.js"
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                    />
+                  </div>
+                </div>
+
+                <p class="card-text card-text-project">
+                  Papiers-Mâchés is a French literature course developed for NYU
+                  that provides interactive activities and a guided reading
+                  approach to help students learn and understand various famous
+                  French pieces.
+                </p>
+                <div class="card-buttons align-self-end">
+                  <button
+                    type="button"
+                    class="btn"
+                    onclick="window.open('https://www.vancery.com/','_blank');"
+                  >
+                    <i class="fas fa-desktop pr-2"></i>Live Site
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card-project" id="papiers" data-aos="fade">
           <div class="row">
             <div class="col-6 align-self-center">
               <img
@@ -338,19 +478,12 @@
             </div>
           </div>
         </div>
-        <h1
-          class="section-heading mb-5"
-          data-aos="fade"
-          data-aos-anchor="#positions"
-        >
+
+        <h1 class="section-heading mb-5" data-aos="fade">
           Positions
         </h1>
         <div class="accordion" id="positions">
-          <div
-            class="card card-accordion"
-            data-aos="fade-down"
-            data-aos-anchor="#vancery"
-          >
+          <div class="card card-accordion" data-aos="fade">
             <div class="card-header card-header-accordion" id="headingOne">
               <button
                 class="btn btn-accordion collapsed"
@@ -394,13 +527,7 @@
               </div>
             </div>
           </div>
-          <div
-            class="card card-accordion"
-            data-aos="fade-down"
-            data-aos-delay="100"
-            data-aos-anchor="#volunteer"
-            id="nyu"
-          >
+          <div class="card card-accordion" data-aos="fade" id="nyu">
             <div class="card-header card-header-accordion" id="headingTwo">
               <button
                 class="btn btn-accordion collapsed"
@@ -450,11 +577,7 @@
               </div>
             </div>
           </div>
-          <div
-            class="card card-accordion"
-            data-aos="fade-down"
-            data-aos-delay="200"
-          >
+          <div class="card card-accordion" data-aos="fade">
             <div class="card-header card-header-accordion" id="headingThree">
               <button
                 class="btn btn-accordion collapsed"
@@ -496,11 +619,7 @@
               </div>
             </div>
           </div>
-          <div
-            class="card card-accordion"
-            data-aos="fade-down"
-            data-aos-delay="300"
-          >
+          <div class="card card-accordion" data-aos="fade">
             <div class="card-header card-header-accordion" id="headingFour">
               <button
                 class="btn btn-accordion collapsed"
@@ -543,12 +662,7 @@
               </div>
             </div>
           </div>
-          <div
-            class="card card-accordion"
-            data-aos="fade-down"
-            data-aos-delay="400"
-            data-aos-anchor="#volunteer"
-          >
+          <div class="card card-accordion" data-aos="fade">
             <div class="card-header card-header-accordion" id="headingFive">
               <button
                 class="btn btn-accordion collapsed"
@@ -607,17 +721,21 @@
         >
           About
         </h1>
-        <div class="card" data-aos="fade-down" id="about-card">
+        <div class="card" data-aos="fade" id="about-card">
           <img class="img-profile" src="/img/thumbnails/profile.png" />
           <div class="row">
             <div class="col-9">
               <div class="card-body mr-5 p-5">
-                I am a passionate Front End Developer, and have experience
-                developing the front end for various applications, primarily in
-                React.js, WordPress, Bootstrap 4 and HTML5/CSS3. I also have
-                experience in Python, Java and MATLAB. I currently attend and
-                work at New York University, studying Computer Science, with a
-                planned graduation of Winter 2019. When not designing web
+                I am a passionate Full Stack Developer, and have experience
+                developing the frontend and backend for various applications,
+                and code primarily in Javascript and Python, with a focus on
+                libraries such as Node/Express.js and React.js. My personal
+                applications are mostly developed with using these, with MongoDB
+                as the database. I also have worked extensively in the frontend
+                with WordPress, Bootstrap 4 and HTML5/CSS3, and worked in
+                automated testing with Selenium Webdriver. I currently attend
+                and work at New York University, studying Computer Science, with
+                a planned graduation of Winter 2019. When not designing web
                 applications, you can find me cooking up new dishes on my
                 <a href="https://www.instagram.com/chef_zaw/">Instagram</a>,
                 ranking up in League of Legends, or putting in work at the gym.
@@ -625,8 +743,6 @@
                   onclick="window.open('/Resume.pdf','_blank');"
                   type="button"
                   class="btn btn-resume mt-4 mx-0"
-                  data-aos="fade"
-                  data-aos-delay="200"
                 >
                   <i class="fas fa-file-pdf fa-lg pr-2"></i>Resume
                 </button>
