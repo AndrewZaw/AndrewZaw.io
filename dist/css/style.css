@@ -151,7 +151,7 @@ body {
 }
 
 .card-text-project {
-  margin-bottom: 5em;
+  margin-bottom: 2em;
 }
 
 .profile-bg {
@@ -210,7 +210,7 @@ body {
 }
 
 .tooltip-inner {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #333;
 }
 
