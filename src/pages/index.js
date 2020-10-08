@@ -1,11 +1,10 @@
 import React from 'react';
-import Header from '../components/header';
+import { Hero, Header } from './components';
 
 export default function Home() {
   return (
     <div>
-      <Header text='test' />
-      <div>Hello world!</div>
+      <Header />
     </div>
   );
 }
